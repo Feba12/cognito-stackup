@@ -1,0 +1,9 @@
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.product img{
+    height: 376px;
+    width: 643px;
+}

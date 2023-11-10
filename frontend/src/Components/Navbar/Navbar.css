@@ -1,57 +1,121 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px;
-    background-color: #FBEEFF;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbeeff;
+  padding: 2px;
+  position: sticky;
+  top: 0;
 }
-.navMenu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-style: 20px;
-    font-weight: 500;
+nav ul {
+  display: flex;
+  gap: 20px;
 }
-.navMenu li{
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #4a306d;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  gap: 40px;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  nav .menu {
     display: flex;
+  }
+
+  nav {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
-}
-.navMenu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #4A306D;
-}
-/* pri sml btn */
-.smlPriBtn {
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
     display: flex;
-    height: 22px;
-    background-color: #BB74D8;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
+
+.smlPriBtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* pri sml btn */
+.smlPriBtn button {
+  width: 137px;
+  height: 48px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  align-items: center;
+  border-radius: 75px;
+  color: #bb74d8;
+  font-size: 15px;
+  font-weight: bold;
+  background: #fbeeff;
+  cursor: pointer;
 }
 .smlPriBtnCount {
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -15px;
-    margin-left: -15px;
-    border-radius: 10px;
-    font-size: 12px;
-    background: red;
-    color: #FBEEFF;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -35px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: #fbeeff;
 }
-
-
-
-

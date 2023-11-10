@@ -1,11 +1,6 @@
-import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
+import React from "react";
 const LoginSignUp = () => {
-  return (
-    <div>
-        <Navbar/>
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default LoginSignUp
+export default LoginSignUp;

@@ -1,56 +1,54 @@
 import React, { useState } from "react";
-import "./Navbar.css";
-
+import { useRef } from "react";
 import logo from "../Assets/landing page/Logo.png";
-import shopping from "../Assets/landing page/shopping-cart.png";
-import { Link } from "react-router-dom";
+import shopping from "../Assets/landing page/cart_icon.png";
+import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-const Navbar = () => {
-  const [menu, setMenu] = useState("home");
+export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [click, setClick] = useState(false);
+  const closeMenu = () => setClick(false);
+  const home = useRef(null);
+  const product = useRef(null);
+  const about = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="navBar">
-      <div className="brandLogo">
+    <nav>
+      <a href="/" className="brandLogo">
         <img src={logo} alt="logo" />
+      </a>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <ul className="navMenu">
-        <li
-          onClick={() => {
-            setMenu("home");
-          }}
-        >
-          <Link style={{ textDecoration: "none" }} to="/">
+      <ul className={menuOpen ? "open" : ""}>
+        <li className="navItem">
+          <a href="/" onClick={closeMenu}>
             Home
-          </Link>
-          {menu === "home" ? <hr /> : <></>}
+          </a>
         </li>
-        <li
-          onClick={() => {
-            setMenu("about");
-          }}
-        >
-          <Link style={{ textDecoration: "none" }} to="/about">
-            About
-          </Link>
-          {menu === "about" ? <hr /> : <></>}
+        <li className="navItem">
+          <HashLink to="#about">About</HashLink>
         </li>
-        <li
-          onClick={() => {
-            setMenu("product");
-          }}
-        >
-          <Link style={{ textDecoration: "none" }} to="/product">
-            Products
-          </Link>
-          {menu === "product" ? <hr /> : <></>}
+        <li className="navItem">
+          <HashLink to="#products">Products</HashLink>
         </li>
       </ul>
       <div className="smlPriBtn">
-        <Link to="/cart">
-          <img src={shopping} alt="cart icon" />
-        </Link>
+        <button>Login</button>
+        <img src={shopping} alt="cart icon" />
         <div className="smlPriBtnCount">0</div>
       </div>
-    </div>
+    </nav>
   );
 };
 

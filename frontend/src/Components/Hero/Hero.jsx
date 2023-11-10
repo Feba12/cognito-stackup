@@ -11,7 +11,7 @@ const Hero = () => {
           <h2>Adorn Your Dreams, One Jewel at a Time</h2>
         </div>
         <div className="heroCta">
-            <button>View All</button>
+            <button>VIEW ALL</button>
         </div>
       </div>
 

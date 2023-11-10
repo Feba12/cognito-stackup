@@ -1,9 +1,27 @@
-.product{
-    display: flex;
-    flex-direction: column;
+.productList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.product img{
-    height: 376px;
-    width: 643px;
+.product {
+  display: flex;
+  flex-direction: row;
+}
+
+.product button {
+  display: flex;
+  width: 53px;
+  height: 53px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  align-items: center;
+}
+
+.product img {
+  height: 176px;
+  width: 243px;
 }

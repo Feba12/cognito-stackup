@@ -5,6 +5,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #ffc9ff;
 }
 .heroDesc {
@@ -42,13 +43,14 @@
 }
 
 /* cta btns */
-.heroCta {
+.heroCta button{
   position: relative;
   align-items: center;
-  width: 107px;
+  width: 180px;
   height: 33px;
   border: 4px solid #bb74d8;
-  color: #fbeeff;
+  background-color: #bb74d8;
+  color: white;
 }
 
 .heroImage {

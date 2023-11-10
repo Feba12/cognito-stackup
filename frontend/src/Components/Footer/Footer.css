@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbeeff;
+}
+
+.brandLogo img {
+  display: flex;
+  width: 144px;
+  height: 49px;
+}
+
+.footCont {
+  display: flex;
+  flex-direction: column;
+}
+
+.footContHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.footContHead ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  align-items: stretch;
+  list-style: none;
+}
+
+.footContHead ul li {
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #4a306d;
+}
+
+.navItem {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  align-items: center;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #b98dda;
+}

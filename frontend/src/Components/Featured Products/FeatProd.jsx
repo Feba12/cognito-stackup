@@ -9,11 +9,7 @@ const FeatProd = () => {
         <div className="mainHead">
           <h1>Featured Products</h1>
         </div>
-        <div className="fpMainItem">
-          <div className="fpMainItemCard">
-           <ProductCarousel/>
-          </div>
-        </div>
+        <ProductCarousel />
       </div>
       <div className="fpMoreCon"></div>
     </div>

@@ -32,13 +32,13 @@ function ProductCarousel() {
   };
 
   return (
-    <div>
+    <div className="productList">
       <button onClick={showPreviousProduct}>
         <img src={arrowleft} alt="" />
       </button>
       <div className="product">
         {/* Display the current product */}
-        <img
+        <img height="372" width="543"
           src={products[currentIndex].image}
           alt={products[currentIndex].name}
         />

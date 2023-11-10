@@ -1,0 +1,149 @@
+.aboutSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-color: #ffc9ff;
+}
+
+.mainHead {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display";
+  font-weight: 800;
+  font-size: 36px;
+  color: #4a306d;
+}
+
+.abtDesc p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
+  align-items: center;
+  padding: 60px;
+  color: #b98dda;
+}
+
+.abCtc {
+  display: flex;
+}
+
+.abCtcLeft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+.abCtcLeft a{
+    text-decoration: none;
+    color: #b98dda;
+}
+
+.abCtcRight {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+}
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #4a306d;
+
+/* ziana.in */
+
+position: absolute;
+width: 90px;
+height: 33px;
+left: 302px;
+top: 2776px;
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+text-transform: lowercase;
+
+color: #b98dda;
+
+/* logo-instagram */
+
+position: absolute;
+width: 27.86px;
+height: 27.86px;
+left: 264px;
+top: 2779px;
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 6.25%;
+top: 6.25%;
+bottom: 6.25%;
+
+background: #b98dda;
+
+/* Vector */
+
+position: absolute;
+left: 28.13%;
+right: 20.83%;
+top: 20.83%;
+bottom: 28.13%;
+
+background: #b98dda;
+
+/* reach us */
+
+position: absolute;
+width: 302px;
+height: 70px;
+left: 1004px;
+top: 2736px;
+
+/* Reach us */
+
+position: absolute;
+width: 116px;
+height: 33px;
+left: 1190px;
+top: 2736px;
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #4a306d;
+
+/* zianawithlove@gmail.com */
+
+position: absolute;
+width: 302px;
+height: 33px;
+left: 1004px;
+top: 2773px;
+
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+text-transform: lowercase;
+
+color: #b98dda;

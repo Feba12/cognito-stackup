@@ -10,6 +10,7 @@ nav {
   padding: 2px;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 nav ul {
   display: flex;
@@ -34,8 +35,6 @@ nav ul li a {
   margin: 0 0.5rem;
   border-radius: 0.5rem;
 }
-
-
 
 nav .menu {
   display: none;
@@ -94,28 +93,31 @@ nav .menu span {
 
 /* pri sml btn */
 .smlPriBtn button {
-  width: 137px;
-  height: 48px;
+  width: 120px;
+  height: 40px;
   outline: none;
-  border: 1px solid #7a7a7a;
+  border: none;
   align-items: center;
-  border-radius: 75px;
-  color: #bb74d8;
+  background-color: #bb74d8;
   font-size: 15px;
   font-weight: bold;
-  background: #fbeeff;
+  color: #fbeeff;
   cursor: pointer;
 }
 .smlPriBtnCount {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -35px;
+  margin-top: -30px;
   margin-left: -35px;
   border-radius: 11px;
   font-size: 14px;
   background: red;
   color: #fbeeff;
+}
+
+.navItem > a:hover {
+  color: #ff69b4 !important;
 }

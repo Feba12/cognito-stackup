@@ -4,9 +4,15 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  height: 25vh;
+  justify-content: space-around;
   align-items: center;
   background-color: #fbeeff;
+}
+
+.brandLogo {
+  display: flex;
+  flex-basis: 40%;
 }
 
 .brandLogo img {
@@ -17,36 +23,50 @@
 
 .footCont {
   display: flex;
+  flex-basis: 60%;
+  justify-content: space-around;
+}
+
+.footContSec {
+  display: flex;
   flex-direction: column;
+  flex-basis: 30%;
 }
 
 .footContHead {
   display: flex;
-  flex-direction: column;
-}
-
-.footContHead ul {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0px;
-  align-items: stretch;
-  list-style: none;
-}
-
-.footContHead ul li {
+  width: 100%;
   font-family: "Open Sans";
   font-weight: bold;
   color: #4a306d;
 }
 
-.navItem {
+.instaLink {
   display: flex;
-  list-style: none;
-  text-align: left;
   align-items: center;
 }
 
-.navItem a {
+.instaLink img {
+  width: 28px;
+  height: 28px;
+}
+
+.footContLink {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 15px;
+  padding-left: 0px;
+  color: #b98dda;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footContLink li {
+  list-style: none;
+}
+
+.footer a {
   text-decoration: none;
   color: #b98dda;
 }

@@ -9,19 +9,18 @@
   background: #ffc9ff;
 }
 .heroDesc {
-  flex: 100%;
   display: flex;
+  flex-basis: 50%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 45px;
   padding-left: 180px;
-  line-height: 1.1;
 }
-.desEle {
-  border: 9px solid #bb74d8;
+.desEle hr {
+  border: 5px solid #bb74d8;
   width: 169px;
   height: 0px;
-  color: #bb74d8;
   background-color: #bb74d8;
 }
 .heroTitleCon h1 {
@@ -32,7 +31,7 @@
   line-height: 55px;
   color: #4a306d;
 }
-.heroTitleCon h2 {
+.heroTitleCon h4 {
   display: flex;
   font-family: "Open Sans";
   font-style: normal;
@@ -43,19 +42,34 @@
 }
 
 /* cta btns */
-.heroCta button{
+.heroCta button {
   position: relative;
   align-items: center;
-  width: 180px;
-  height: 33px;
+  width: 250px;
+  height: 65px;
   border: 4px solid #bb74d8;
   background-color: #bb74d8;
   color: white;
 }
 
 .heroImage {
-  flex: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 50%;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heroTitleCon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heroCta button {
+  cursor: pointer;
 }

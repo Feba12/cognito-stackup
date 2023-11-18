@@ -37,15 +37,19 @@ export const Navbar = () => {
           </a>
         </li>
         <li className="navItem">
-          <HashLink to="#about">About</HashLink>
+          <HashLink to="/.#about">About</HashLink>
         </li>
         <li className="navItem">
-          <HashLink to="#products">Products</HashLink>
+          <HashLink to="/.#featProdSec">Products</HashLink>
         </li>
       </ul>
       <div className="smlPriBtn">
-        <button>Login</button>
-        <img src={shopping} alt="cart icon" />
+        <NavLink to="/login">
+          <button>Login</button>
+        </NavLink>
+        <NavLink to="/cart">
+          <img src={shopping} alt="cart icon" width="32" height="32" />
+        </NavLink>
         <div className="smlPriBtnCount">0</div>
       </div>
     </nav>

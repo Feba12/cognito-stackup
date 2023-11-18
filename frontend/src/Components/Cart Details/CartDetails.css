@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  text-transform: uppercase;
+}
+.cartHeader {
+  height: 15vh;
+  display: flex;
+  padding: 5%;
+  padding-bottom: 8%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc9ff;
+}
+.cartHeadItem {
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 3px solid #4a306d;
+  font-size: 16px;
+}
+.cartBody {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.cartBody h2 {
+  font-family: "Playfair Display";
+  font-size: 24px;
+}
+.cartBodyLeft {
+  flex-basis: 65%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.cartBodyRight {
+  flex-basis: 35%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.cartSumItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cartItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prodItem {
+  display: flex;
+}
+.prodItem img {
+  width: 165px;
+  height: 128px;
+  object-fit: cover;
+}
+.prodDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.prodQuant {
+  display: flex;
+  height: 58px;
+  width: 162px;
+  border: 2px solid #bb74d8;
+}
+.prodQuant input[type="number"] {
+  flex-basis: 125px;
+  height: 90%;
+  border: none;
+}
+.numberIpBtn {
+  flex-basis: 37px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.numberIpBtn button {
+  height: 50%;
+  background: none;
+  background-color: #fbeeff;
+  border: 2px solid #bb74d8;
+}
+
+.custom-line {
+  border: 1px solid #4a306d;
+  margin: 10px 0;
+}
+.cartCTA {
+  display: flex;
+  gap: 2em;
+}
+.priBtnLar {
+  width: 200px;
+  height: 45px;
+  background: #bb74d8;
+  color: #fbeeff;
+  cursor: pointer;
+  border: none;
+}
+.secBtnLar {
+  width: 200px;
+  height: 45px;
+  border: 2px solid #bb74d8;
+  background: none;
+  color: #bb74d8;
+  cursor: pointer;
+}
+.shippingForm,
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2vh;
+}
+.formSplit {
+  display: flex;
+  justify-content: space-between;
+}
+.formDiv {
+  flex-basis: 48%;
+}
+input {
+  height: 35px;
+  border: 1px solid #bb74d8;
+}
